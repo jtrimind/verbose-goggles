@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ArticleCard from '../components/ArticleCard';
+import HeroBanner from '../components/HeroBanner';
 
 const ARTICLES = [
     {
@@ -79,10 +80,12 @@ export default function Home() {
         <div className="min-h-screen bg-white flex flex-col font-sans">
             <Header />
 
-            <main className="flex-grow pt-[110px] pb-20 px-6">
-                <div className="max-w-[1200px] mx-auto">
+            <main className="flex-grow pt-[72px] pb-20">
+                <HeroBanner />
 
-                    <div className="mb-16 pt-8">
+                <div className="max-w-[1200px] mx-auto px-6 mt-16">
+
+                    <div className="mb-12">
                         <h1 className="text-4xl md:text-5xl font-bold mb-4 tracking-tighter text-gray-900">
                             Latest <span className="text-blue-700">Insights</span>
                         </h1>
@@ -98,8 +101,8 @@ export default function Home() {
                                 key={tag}
                                 onClick={() => setActiveTag(tag)}
                                 className={`px-6 py-2.5 rounded-full text-sm font-semibold whitespace-nowrap transition-all duration-300 ${activeTag === tag
-                                    ? 'bg-black text-white shadow-lg shadow-black/20 ring-2 ring-black ring-offset-2'
-                                    : 'bg-gray-100 text-gray-600 hover:bg-gray-200 hover:text-black'
+                                        ? 'bg-black text-white shadow-lg shadow-black/20 ring-2 ring-black ring-offset-2'
+                                        : 'bg-gray-100 text-gray-600 hover:bg-gray-200 hover:text-black'
                                     }`}
                             >
                                 {tag}
