@@ -9,7 +9,7 @@ export default function Footer() {
                     <div className="font-bold text-xl tracking-tight">Samsung Tech</div>
                     <div className="flex gap-8 text-sm font-medium text-gray-600">
                         <Link to="/privacy-policy" className="hover:text-black transition-colors">Privacy Policy</Link>
-                        <a href="#" className="hover:text-black transition-colors">Terms & Conditions</a>
+                        <Link to="/terms" className="hover:text-black transition-colors">Terms & Conditions</Link>
                         <a href="#" className="hover:text-black transition-colors">Contact Us</a>
                     </div>
                 </div>
