@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 
 
 export default function Footer() {
@@ -7,7 +8,7 @@ export default function Footer() {
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 border-b border-gray-300 pb-8 mb-8">
                     <div className="font-bold text-xl tracking-tight">Samsung Tech</div>
                     <div className="flex gap-8 text-sm font-medium text-gray-600">
-                        <a href="#" className="hover:text-black transition-colors">Privacy Policy</a>
+                        <Link to="/privacy-policy" className="hover:text-black transition-colors">Privacy Policy</Link>
                         <a href="#" className="hover:text-black transition-colors">Terms & Conditions</a>
                         <a href="#" className="hover:text-black transition-colors">Contact Us</a>
                     </div>
